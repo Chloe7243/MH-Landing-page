@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 w-full p-6 py-4 flex items-center justify-between bg-opacity-50 backdrop-blur-lg drop-shadow-sm z-40">
+      <nav className="fixed top-0 w-full p-6 py-4 flex items-center justify-between bg-opacity-50 backdrop-blur-lg drop-shadow-sm z-40 border-b">
         <Logo />
 
         <div className="flex items-center gap-6">
@@ -35,14 +35,14 @@ function App() {
         </div>
       </nav>
 
-      <main className="p-8 mt-14 max-w-[90rem] m-auto flex flex-col gap-10">
+      <main className="p-8 sm:px-10 lg:px-20 mt-20 max-w-[90rem] m-auto flex flex-col gap-10">
         {/* SECTION WITH VIDEOS */}
-        <div className="flex justify-center relative h-[85vh] items-center gap-10 flex-wrap">
-          <h1 className="font-black md:text-7xl lg:text-8xl sm:text-6xl text-4xl capitalize lg:pb-6 leading-10 max-w-[25rem]">
+        <div className="flex justify-center relative items-center gap-10 flex-wrap">
+          <h1 className="font-extrabold md:text-5xl xl:text-6xl text-4xl capitalize lg:py-6" style={{lineHeight:"1.7"}}>
             Discover, Stream, Enjoy: Your Ultimate Cinematic Companion!
           </h1>
 
-          <video autoPlay muted loop className="max-w-[50rem]">
+          <video autoPlay muted loop className="md:max-h-[85vh]">
             <source src={pcVideo} type="video/mp4" />
             Sorry, your browser doesn't support videos.
           </video>
@@ -51,7 +51,7 @@ function App() {
         {/* ABOUT SECTION */}
         <div id="about" className={`flex flex-col gap-8 items-center`}>
           <h2 className="font-bold text-4xl text-center">About</h2>
-          <p className="max-w-[70rem]">
+          <p>
             Welcome to our app, your ultimate destination for discovering the
             perfect movie or show to watch! Whether you're in the mood for a
             thrilling action flick, a heartwarming romantic comedy, or an
@@ -68,7 +68,7 @@ function App() {
 
           {/* ABOUT SECTION CARDS */}
           <div
-            className={`flex gap-10 flex-wrap justify-center mt-10 max-w-[70rem]`}
+            className={`flex gap-10 flex-wrap justify-center mt-10`}
           >
             <Card>
               <p className={`bg-black ${iconClass}`}>
