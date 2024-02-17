@@ -38,7 +38,7 @@ function App() {
       <main className="p-8 mt-14 max-w-[90rem] m-auto flex flex-col gap-10">
         {/* SECTION WITH VIDEOS */}
         <div className="flex justify-center relative h-[85vh] items-center gap-10 flex-wrap">
-          <h1 className="font-black md:text-4xl sm:text-3xl text-2xl capitalize lg:pb-6 leading-10 max-w-[25rem]">
+          <h1 className="font-black md:text-7xl lg:text-8xl sm:text-6xl text-4xl capitalize lg:pb-6 leading-10 max-w-[25rem]">
             Discover, Stream, Enjoy: Your Ultimate Cinematic Companion!
           </h1>
 
